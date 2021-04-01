@@ -11,26 +11,28 @@
 <body>
     <h1>Forms Demo</h1>
 
+    <!--HTTP request will look like file:///tacos?username=adsadas&password=123456&color=%23000000&number=&time=-->
+
     <form action="/tacos">
         <p>
             <label for="username">Enter a username: </label>
-            <input id="username" type="text" placeholder="username">
+            <input id="username" type="text" placeholder="username" name="username">
         </p>
         <p>
             <label for="password"> Enter a password</label>
-            <input id="password" type="password" placeholder="password">
+            <input id="password" type="password" placeholder="password" name="password">
         </p>
         <p>
             <label for="color"> Enter a color</label>
-            <input id="color" type="color">
+            <input id="color" type="color" name="color">
         </p>
         <p>
             <label for="number"> Enter a number</label>
-            <input id="number" type="number" placeholder="enter a number">
+            <input id="number" type="number" placeholder="enter a number" name="number">
         </p>
         <p>
             <label for="time"> Enter a time</label>
-            <input id="time" type="time">
+            <input id="time" type="time" name="time">
         </p>
 
         <button>Submit</button>
@@ -42,6 +44,31 @@
     </form>
     <hr>
     <button>Outside buton</button>
+
+    <hr>
+
+    <!--ANOTHER FORM, USEFUL-->
+    <!--Search on reddit-->
+    <h2>Search on Reddit</h2>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h2>Search on Google</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h2>Search on Youtube</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search youtube</button>
+    </form>
+
+
+
 </body>
 
 </html>
