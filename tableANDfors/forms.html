@@ -67,6 +67,55 @@
         <button>Search youtube</button>
     </form>
 
+    <h2>More inputs</h2>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <p>
+            <label for="meal">Please select and entrie</label>
+            <select name="meal" id="meal">
+                <option value="">Please select an option</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="stake">stake</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="chese">Amount of cheese</label>
+            <input type="range" name="chese" id="chese" min="1" max="100" step="8">
+        </p>
+
+        <p>
+            <label for="review">Review</label>
+            <br>
+            <textarea name="review" id="review" cols="30" rows="10" placeholder="Type"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <!--required attribute to mark that is obligatory to do something with the input field-->
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Enter username</label>
+            <!--minlength and maxlength attribute to mark the ammount of characteres-->
+            <input type="text" name="username" id="username" minlength="5" maxlength="10" required>
+        </p>
+        <button>Submit</button>
+    </form>
 
 
 </body>
