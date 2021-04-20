@@ -1,0 +1,23 @@
+h1 {
+  background-color: rgb(145, 184, 218);
+  border: 1px solid black;
+  /* display: inline; */
+}
+
+span {
+  border: 1px solid black;
+  background-color: palegreen;
+  width: 500px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 5px solid black;
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+
+  display: inline-block;
+}
