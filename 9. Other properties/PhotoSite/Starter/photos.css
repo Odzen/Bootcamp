@@ -1,0 +1,27 @@
+img {
+  /*It takes like a responsive effect since each image is 30% of the body size
+    if you resize the site with the cursor, the images will resize too*/
+  width: 30%;
+  /*Another option, showing the calculation*/
+  margin: calc(10% / 6);
+  /* margin: 1.66666%; */
+}
+
+/* Some math to now how much margin to put
+All this can be avoided by using the flex box
+
+30+30+30 =90 so we have 10% free
+
+10/6= 1.6666
+
+*/
+
+nav {
+  font-family: Raleway, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f1f1f1;
+  width: 30%;
+  margin-left: calc(10% / 6);
+  padding: 1.2em 0;
+}
