@@ -1,0 +1,41 @@
+div {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+#middle {
+  background-color: brown;
+}
+
+#static #middle {
+  /*Nothing changes, the top, right, bottom, left elements don't work*/
+  position: static;
+  top: 100px;
+}
+
+#relative #middle {
+  /*Relative to itself*/
+  position: relative;
+  top: 50px; /*Pushing down the element*/
+  left: 50px; /* Pushing right*/
+}
+
+#absolute {
+  position: relative;
+}
+#absolute #middle {
+  /*Relative to its parent, from the corner*/
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+#fixed #middle {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
