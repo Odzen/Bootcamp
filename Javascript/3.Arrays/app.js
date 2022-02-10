@@ -82,3 +82,33 @@ console.log(months);
 const score = [1, 4, 2, -3, 200, 2342, -234423];
 score.sort();
 console.log(score);
+
+// Equality in arrays
+console.log('=== Equality');
+let a1 = [1, 2, 3];
+let a2 = [1, 2, 3];
+console.log(a1 === a2);
+let a3 = a1;
+console.log(a1 === a3);
+a3.push(4);
+//When I change one, I change the other, it is an alias, the === works
+// they're pointing to the same space in memory
+console.log(a3);
+console.log(a1);
+
+//Const
+console.log('Const');
+const nums = [1, 2, 3];
+// const nums = [1, 2, 3]; error
+nums.push(4); // no error, all good
+// no error as long as the reference reamins the same
+
+//Nested arrays, matriz
+console.log('Nested arrays');
+const colors = [
+  ['red', 'crimson'],
+  ['red', 'good'],
+  ['red', 'l'],
+];
+console.log(colors);
+console.log(colors[0][1]);
