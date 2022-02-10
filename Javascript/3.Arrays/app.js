@@ -49,3 +49,36 @@ console.log(arrayIndex.indexOf(5));
 console.log('reverse');
 let arrayReverse = [1, 2, 3, 4];
 console.log(arrayReverse.reverse());
+
+//slice: copy of an portion, includes the start but not the stop
+console.log('slice');
+let arraySlice = [1, 2, 3, 4];
+console.log(arraySlice.slice(2));
+console.log(arraySlice.slice(1, 3));
+// last 2 items
+console.log(arraySlice.slice(-2));
+
+//splice: changes the contents of an array
+console.log('splice');
+let arraySplice = [1, 2, 3, 4];
+//Delete the 3 with splice
+console.log(arraySplice.splice(2, 1));
+console.log(arraySplice);
+//Delete the 2 and 4 with splice
+console.log(arraySplice.splice(1, 2));
+
+console.log(arraySplice);
+
+//insert with splice
+arraySplice.splice(0, 0, 5);
+console.log(arraySplice);
+
+//Sort
+console.log('sort');
+const months = ['March', 'June', 'Feb'];
+months.sort();
+console.log(months);
+
+const score = [1, 4, 2, -3, 200, 2342, -234423];
+score.sort();
+console.log(score);
