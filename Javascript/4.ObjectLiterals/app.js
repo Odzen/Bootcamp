@@ -63,3 +63,42 @@ midterms['danielle']='A';
 // Add
 midterms.ezra= 'B+';
 midterms['Antonio']= 'C+';
+
+// ARRAYS + OBJECTS
+
+// Objects inside of Arrays
+
+const shoppingCart = [
+    {
+        product: 'product1',
+        price: 123,
+        quantity:3
+    },
+    {
+        product: 'product2',
+        price: 234,
+        quantity:6
+    },
+    {
+        product: 'product3',
+        price: 3453,
+        quantity:1
+    }
+]
+
+//Price product 2 
+console.log(shoppingCart[1].price);
+
+// Arrays inside of Objects, and Objects inside Objects
+const student = {
+    firstName: 'David',
+    lastName: ' Jones',
+    strengths: ['Music', 'Art'],
+    exams:{
+        midterm:92,
+        final:88
+    }
+};
+
+//Final exam grade of the student 
+console.log(student.exams.final);
