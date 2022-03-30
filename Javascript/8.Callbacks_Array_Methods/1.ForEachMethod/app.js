@@ -1,3 +1,5 @@
+//it does not make a copy with the results, evaluate the function and change the structure itself
+
 const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
 
 nums.forEach(function (n) {
