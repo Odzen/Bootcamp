@@ -61,6 +61,8 @@ console.log(recentMovies);
 
 
 //EXERCISE
+
+//Variant 1
 function validUserNames(usernames) {
     const validUserNames = usernames.filter(user => {
         return user.length < 10;
@@ -70,3 +72,11 @@ function validUserNames(usernames) {
 
 console.log(validUserNames(['mark', 'staceysmom1978', 'sdahvweuy3782r8webf', 'carrie98', 'MoanaFan']));
 
+
+//Variant 2
+const validUserNames2 = (usernames => {
+    const validUserNames = usernames.filter(user => user.length < 10);
+    return validUserNames;
+});
+
+console.log(validUserNames2(['mark', 'staceysmom1978', 'sdahvweuy3782r8webf', 'carrie98', 'MoanaFan']));
