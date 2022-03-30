@@ -21,5 +21,5 @@ const id = setInterval(() => {
     console.log(Math.random());
 }, 2000);
 
-
+//To stop the iteration --> clearInterval(id)
 
