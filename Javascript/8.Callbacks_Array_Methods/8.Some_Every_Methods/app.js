@@ -80,3 +80,14 @@ const movies = [
 const after2015 = movies.some(movie => movie.year > 2015);
 
 console.log(after2015); // false
+
+
+//EXERCISE
+
+const allEvens = (numbers => {
+    const areAllEven = numbers.every(number => number % 2 === 0);
+    return areAllEven;
+});
+
+console.log(allEvens([2, 4, 6, 8])); //true
+console.log(allEvens([1, 4, 6, 8])); //false
