@@ -9,3 +9,4 @@ than one input element on the page. You'll need to select using the type attribu
 
 const doneTodos = document.querySelectorAll('.done');
 const checkbox = document.querySelector('input[type="checkbox"]');
+

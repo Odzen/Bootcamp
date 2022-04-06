@@ -64,3 +64,47 @@ const links = document.querySelectorAll('p a');
 for (let link of links) {
     console.log(link.href)
 }
+
+
+// INNER TEXT
+// It's what it is between the opening and closing tags, is something it's hidden, it doesn't show it
+const inner = document.querySelector('p').innerText;
+console.log(inner);
+
+//document.querySelector('p').innerText = 'lololo' // I could change the text
+
+//TEXT CONTENT
+// Return every piece of content inside, if something it's hidden, it shows it anyway
+
+//INNER HTML
+// IT returns the markup with the tags, not only the text
+
+const innerHTML = document.querySelector('p').innerHTML;
+console.log(innerHTML);
+
+//ATRIBUTES
+
+// id
+console.log(document.querySelector('#banner').id); // Should return banner
+
+//src
+document.querySelector('#banner').src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silky_bantam.jpg/440px-Silky_bantam.jpg';
+
+//href
+const firstLink = document.querySelector('a');
+console.log(firstLink.href); // Should print the link, the long format
+console.log(firstLink.getAttribute('href')); // Should print the link in short format
+
+//title
+console.log(document.querySelector('a').title); // Should return the title of the anchor tag
+
+
+//Another example with set attrbute
+
+const input = document.querySelector('input[type="text"]');
+console.log(input.type); // text
+input.type = 'password';
+console.log(input.type); // password
+
+input.setAttribute('type', 'color');
+
