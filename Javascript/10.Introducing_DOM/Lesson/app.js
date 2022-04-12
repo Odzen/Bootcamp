@@ -108,3 +108,23 @@ console.log(input.type); // password
 
 input.setAttribute('type', 'color');
 
+
+
+//WORKING WITH STYLES
+
+const h1 = document.querySelector('h1');
+console.log(h1.style); // Contains CSS properties, 
+
+console.log(h1.style.color);//not contains the current style, just an wmpty string ""
+
+//Read from CSS
+const computedStyle = window.getComputedStyle(h1) // Object
+console.log(computedStyle.color) // Read from the CSS object rgb(128, 128, 0)
+
+
+//WE can use STYLE object to change the CSS balues
+h1.style.fontSize = '3em'
+h1.style.color = 'green'
+h1.style.border = '2px solid pink'
+
+//Better way to apply new styles
