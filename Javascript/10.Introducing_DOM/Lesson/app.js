@@ -127,4 +127,22 @@ h1.style.fontSize = '3em'
 h1.style.color = 'green'
 h1.style.border = '2px solid pink'
 
-//Better way to apply new styles
+//Better way to apply new styles - CSS CLASS
+
+const h2 = document.querySelector('h2');
+h2.getAttribute('class');
+h2.setAttribute('class', 'purple');
+
+const classList = h2.classList; //Is an object to work with classes
+
+classList.add('purple') // Adds the properties to h2 of the CSS class purple
+classList.add('border')
+
+classList.remove('purple') // Removes the properties
+
+console.log(h2.classList.contains('purple')) // False
+console.log(h2.classList.contains('border')) // True
+
+h2.classList.toggle('purple'); // palanca, cada vez que se llama, enciende y apaga la clase
+
+console.log(h2.getAttribute('class')); // border, purple
