@@ -145,4 +145,48 @@ console.log(h2.classList.contains('border')) // True
 
 h2.classList.toggle('purple'); // palanca, cada vez que se llama, enciende y apaga la clase
 
-console.log(h2.getAttribute('class')); // border, purple
+console.log(h2.getAttribute('class')); // border, purple. Show the classes that I have
+
+// PARENT / CHILD / SIBLING
+
+// Parent
+const firstBold = document.querySelector('b');
+const paragraphParent = firstBold.parentElement;
+console.log(paragraphParent); // It will print <p> </p>
+
+// Child
+console.log(paragraphParent.childElementCount); // 8 children elements
+console.log(paragraphParent.children); // HTML Collection of the 8 children
+
+//Sibling
+
+const squareImg = document.querySelector('.square');
+
+console.log(squareImg.previousElementSibling);
+console.log(squareImg.nextElementSibling);
+
+// CREATING NEW ELEMENTS
+
+// New DOM Element and append it
+const newImg = document.createElement('img');
+newImg.src = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/say-my-name-walter-white-breaking-bad-joseph-oland.jpg';
+document.body.appendChild(newImg);
+newImg.classList.add('square');
+
+const newH3 = document.createElement('h3');
+newH3.innerText = 'Testing';
+document.body.appendChild(newH3);
+
+// Just append
+const p = document.querySelector('p');
+p.append('new text'); // adds new text in the final of the paragrph
+
+// Prepend
+const newB = document.createElement('b');
+newB.append('Hi!');
+p.prepend(newB); // Adds new text at the beginnning of p
+
+// insertAdjacent
+h2.append("Are adorable chickens");
+
+h1.insertAdjacentElement('afterend', h2);
