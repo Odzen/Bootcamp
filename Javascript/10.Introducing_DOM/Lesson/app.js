@@ -188,5 +188,16 @@ p.prepend(newB); // Adds new text at the beginnning of p
 
 // insertAdjacent
 h2.append("Are adorable chickens");
-
 h1.insertAdjacentElement('afterend', h2);
+
+//REMOVE CHILD AND REMOVE
+
+// Remove the child element
+const firstLi = document.querySelector('li');
+
+const ul = firstLi.parentElement
+ul.removeChild(firstLi);
+
+// Newer method, Only removes the current element
+newImg.remove();
+
