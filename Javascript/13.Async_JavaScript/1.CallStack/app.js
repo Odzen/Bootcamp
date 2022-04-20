@@ -3,6 +3,8 @@
 
 // Functions tha call other functions
 const multiply = (x, y) => x * y;
+
+// Calls multiply
 const square = (x) => multiply(x, x);
 
 // Calls square function three times
