@@ -30,8 +30,8 @@ app.listen(8080, () =>
 
 // / => 'Welcome'
 app.get('/', (req, res) => {
-    console.log("Home Page!!!");
-    res.send('Home Page!!');
+    console.log("Welcome to the Home Page!!!");
+    res.send('Welcome to the  Home Page!!');
 })
 
 // Defining paterns for your routes — Generic Patterns
