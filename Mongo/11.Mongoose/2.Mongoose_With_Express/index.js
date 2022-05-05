@@ -1,3 +1,5 @@
+var ObjectID = require('mongoose').ObjectID;
+
 
 const express = require('express');
 
@@ -38,6 +40,12 @@ app.get('/products', async (req , res) => {
     const products = await Product.find({});
     console.log(products);
     res.render('products/index', {products});
+});
+
+app.get('/products/:id', async (req, res) => {
+    const { id } = req.params;
+    const product = await Product.findById(id);
+    res.send(product);
 });
 
 app.listen(3000, () => {

@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 
 // Schema
 const productSchema = new mongoose.Schema({
+    //_id: { type: String },
+
     name: {
         type : String,
         required : true
